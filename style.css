@@ -649,3 +649,71 @@ body {
   }
 
 }
+
+/* =========================
+   RESPONSIVE DHIKR TEXT
+========================= */
+
+.dhikr-content {
+  min-height: 330px;
+}
+
+.arabic-text {
+  transition:
+    font-size 0.2s ease,
+    line-height 0.2s ease;
+}
+
+
+/* Medium-length Arabic */
+
+.arabic-text.text-medium {
+  font-size: 34px;
+  line-height: 1.75;
+}
+
+
+/* Long Arabic */
+
+.arabic-text.text-long {
+  font-size: 28px;
+  line-height: 1.65;
+}
+
+
+/* Very long Arabic */
+
+.arabic-text.text-very-long {
+  font-size: 22px;
+  line-height: 1.55;
+}
+
+
+@media (max-width: 600px) {
+
+  .dhikr-content {
+    min-height: 360px;
+    padding-bottom: 28px;
+  }
+
+  .arabic-text {
+    font-size: 34px;
+    line-height: 1.75;
+  }
+
+  .arabic-text.text-medium {
+    font-size: 30px;
+    line-height: 1.65;
+  }
+
+  .arabic-text.text-long {
+    font-size: 24px;
+    line-height: 1.55;
+  }
+
+  .arabic-text.text-very-long {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+}
