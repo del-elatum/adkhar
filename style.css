@@ -144,31 +144,31 @@ body {
 }
 
 
-.time-button[data-time="morning"].active {
-  color: #f2cf79;
+.time-button[data-time="night"].active {
+  color: #9fb4ff;
 }
 
-.time-button[data-time="morning"].active .time-icon {
-  background: rgba(242, 207, 121, 0.08);
+.time-button[data-time="night"].active .time-icon {
+  background: rgba(159, 180, 255, 0.08);
 
-  border-color: rgba(242, 207, 121, 0.25);
+  border-color: rgba(159, 180, 255, 0.28);
 
   box-shadow:
-    0 0 30px rgba(242, 207, 121, 0.09);
+    0 0 30px rgba(159, 180, 255, 0.12);
 }
 
 
-.time-button[data-time="evening"].active {
-  color: #a7b7ef;
+.time-button[data-time="night"].active {
+  color: #9fb4ff;
 }
 
-.time-button[data-time="evening"].active .time-icon {
-  background: rgba(167, 183, 239, 0.08);
+.time-button[data-time="night"].active .time-icon {
+  background: rgba(159, 180, 255, 0.08);
 
-  border-color: rgba(167, 183, 239, 0.25);
+  border-color: rgba(159, 180, 255, 0.28);
 
   box-shadow:
-    0 0 30px rgba(167, 183, 239, 0.09);
+    0 0 30px rgba(159, 180, 255, 0.12);
 }
 
 
