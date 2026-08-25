@@ -511,3 +511,138 @@ body {
     height: 54px;
   }
 }
+
+/* =========================
+   AUDIO INTERACTION
+========================= */
+
+.progress-bar {
+  cursor: pointer;
+}
+
+
+/* =========================
+   AUDIO + AUTOPLAY AREA
+========================= */
+
+.audio-section {
+  width: 100%;
+  margin-bottom: 62px;
+}
+
+.audio-section .audio-player {
+  margin-bottom: 12px;
+}
+
+
+/* =========================
+   AUTOPLAY BUTTON
+========================= */
+
+.autoplay-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  margin-left: auto;
+
+  padding: 8px 13px;
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  color: #858994;
+
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.autoplay-button:hover {
+  color: #e2e3e6;
+
+  background: rgba(255, 255, 255, 0.055);
+
+  border-color: rgba(255, 255, 255, 0.11);
+}
+
+.autoplay-button.active {
+  color: #f2cf79;
+
+  background: rgba(242, 207, 121, 0.07);
+
+  border-color: rgba(242, 207, 121, 0.18);
+}
+
+.autoplay-icon {
+  font-size: 9px;
+}
+
+
+/* =========================
+   REPEAT INDICATOR
+========================= */
+
+.repeat-info {
+  height: 0;
+
+  margin-top: 0;
+
+  opacity: 0;
+
+  color: #858994;
+
+  font-size: 12px;
+  font-weight: 500;
+
+  letter-spacing: 0.03em;
+
+  transition:
+    opacity 0.2s ease,
+    margin-top 0.2s ease;
+}
+
+.repeat-info.visible {
+  height: auto;
+
+  margin-top: 22px;
+
+  opacity: 1;
+}
+
+
+/* =========================
+   PRESERVE ARABIC LINE BREAKS
+========================= */
+
+.dhikr-text {
+  white-space: pre-line;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .audio-section {
+    margin-bottom: 36px;
+  }
+
+  .autoplay-button {
+    margin-top: 2px;
+  }
+
+}
