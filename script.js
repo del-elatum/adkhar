@@ -487,13 +487,33 @@ function updateContent() {
   pageCounter.textContent =
     `${currentPage + 1} / ${currentList.length}`;
 
-  if (currentLanguage === 'arabic') {
-    dhikrText.classList.add('arabic-text');
-    dhikrText.classList.remove('secondary-text');
-  } else {
-    dhikrText.classList.remove('arabic-text');
-    dhikrText.classList.add('secondary-text');
+  dhikrText.classList.remove(
+  'arabic-text',
+  'secondary-text',
+  'text-medium',
+  'text-long',
+  'text-very-long'
+);
+
+if (currentLanguage === 'arabic') {
+
+  dhikrText.classList.add('arabic-text');
+
+  const textLength = item.arabic.length;
+
+  if (textLength > 450) {
+    dhikrText.classList.add('text-very-long');
+  } else if (textLength > 260) {
+    dhikrText.classList.add('text-long');
+  } else if (textLength > 140) {
+    dhikrText.classList.add('text-medium');
   }
+
+} else {
+
+  dhikrText.classList.add('secondary-text');
+
+}
 
   updateRepeatInfo();
   updateNavigationButtons();
